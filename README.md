@@ -18,3 +18,15 @@ python manage.py runserver
 python manage.py startapp <app-name>
 ```
 An app can live anywhere on the Python path.
+
+### Run migrations
+
+```
+python manage.py migrate
+```
+
+### Create migrations
+
+```
+python manage.py makemigrations <app-name>
+```
