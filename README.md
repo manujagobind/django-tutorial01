@@ -32,8 +32,15 @@ python manage.py makemigrations <app-name>
 python manage.py migrate
 ```
 
+### Run tests
+
+```
+python manage.py test <app-name>
+```
+
 ## Notes
 
 - An app can live anywhere on the Python path. An app can be used in multiple projects.
 - Need to revisit model relationships.
 - In templates, use app_name:view_name instead of hardcoding urls. This decouples templates from url definitions and changing urls only requires a change in urls.py.
+- Generic views take pk as the name for path parameter.
